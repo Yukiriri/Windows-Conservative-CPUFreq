@@ -19,8 +19,8 @@ for %%i in (SetAcValueIndex SetDcValueIndex) do (
     powercfg -%%i Scheme_Current Sub_Processor PerfDecThreshold1 50
     powercfg -%%i Scheme_Current Sub_Processor PerfIncPol 2
     powercfg -%%i Scheme_Current Sub_Processor PerfIncPol1 2
-    powercfg -%%i Scheme_Current Sub_Processor PerfDecPol 0
-    powercfg -%%i Scheme_Current Sub_Processor PerfDecPol1 0
+    powercfg -%%i Scheme_Current Sub_Processor PerfDecPol 1
+    powercfg -%%i Scheme_Current Sub_Processor PerfDecPol1 1
 )
 
 powercfg -SetActive Scheme_Current
