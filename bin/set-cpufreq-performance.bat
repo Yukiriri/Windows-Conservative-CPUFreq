@@ -1,8 +1,6 @@
-powercfg -SetAcValueIndex Scheme_Current Sub_Processor PerfCheck 20
-@REM powercfg -SetDcValueIndex Scheme_Current Sub_Processor PerfCheck
-
 for %%i in (SetAcValueIndex) do (
     powercfg -%%i Scheme_Current Sub_Processor PerfAutonomous 0
+    powercfg -%%i Scheme_Current Sub_Processor PerfCheck 10
 
     powercfg -%%i Scheme_Current Sub_Processor ProcThrottleMin 0
     powercfg -%%i Scheme_Current Sub_Processor ProcThrottleMin1 0

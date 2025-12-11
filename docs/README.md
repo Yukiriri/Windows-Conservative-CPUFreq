@@ -6,14 +6,12 @@
 [Performance]: ../bin/set-cpufreq-performance.bat
 [Powersave]: ../bin/set-cpufreq-powersave.bat
 [Ondemand]: ../bin/set-cpufreq-ondemand.bat
-[Conservative]: ../bin/set-cpufreq-conservative.bat
 
-| 调频目标       | 用途场景     | 性能影响       | AC有效 | DC有效 |
-| :------------- | :----------- | :------------- | :----- | :----- |
-| [Performance]  | 恒定最高频率 | 不影响         | 是     | 否     |
-| [Powersave]    | 恒定最佳频率 | 已降低性能上限 | 是     | 是     |
-| [Ondemand]     | 按需积极调频 | 不影响         | 是     | 是     |
-| [Conservative] | 按需平缓调频 | 已降低提频速度 | 是     | 是     |
+| 调频目标      | 用途场景     | 性能影响       | AC有效 | DC有效 |
+| :------------ | :----------- | :------------- | :----- | :----- |
+| [Performance] | 恒定最高频率 | 不影响         | 是     | 否     |
+| [Powersave]   | 恒定最佳频率 | 已降低性能上限 | 是     | 是     |
+| [Ondemand]    | 按需调频     | 不影响         | 是     | 是     |
 
 > [!IMPORTANT]  
 > 需要管理员权限运行  
