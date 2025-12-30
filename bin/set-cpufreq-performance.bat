@@ -1,6 +1,6 @@
 for %%i in (SetAcValueIndex) do (
     powercfg -%%i Scheme_Current Sub_Processor PerfAutonomous 0
-    powercfg -%%i Scheme_Current Sub_Processor PerfCheck 10
+    powercfg -%%i Scheme_Current Sub_Processor PerfCheck 20
 
     powercfg -%%i Scheme_Current Sub_Processor ProcThrottleMin 0
     powercfg -%%i Scheme_Current Sub_Processor ProcThrottleMin1 0
@@ -10,7 +10,7 @@ for %%i in (SetAcValueIndex) do (
     powercfg -%%i Scheme_Current Sub_Processor ProcThrottleMax2 100
 
     powercfg -%%i Scheme_Current Sub_Processor PerfBoostMode 1
-    powercfg -%%i Scheme_Current Sub_Processor PerfBoostPol 0
+    powercfg -%%i Scheme_Current Sub_Processor PerfBoostPol 100
     powercfg -%%i Scheme_Current Sub_Processor PerfIncThreshold 0
     powercfg -%%i Scheme_Current Sub_Processor PerfIncThreshold1 0
     powercfg -%%i Scheme_Current Sub_Processor PerfDecThreshold 0
