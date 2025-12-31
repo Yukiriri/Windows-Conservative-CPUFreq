@@ -8,14 +8,16 @@
 [Ondemand]: ../bin/set-cpufreq-ondemand.bat
 [Conservative]: ../bin/set-cpufreq-conservative.bat
 [Readyboost]: ../bin/set-cpufreq-readyboost.bat
+[Readyboost-Half]: ../bin/set-cpufreq-readyboost-half.bat
 
-| 调频目标       | 用途场景     | 性能影响     | AC有效 | DC有效 |
-| :------------- | :----------- | :----------- | :----- | :----- |
-| [Performance]  | 恒定最高频率 | 不影响       | 是     | 否     |
-| [Powersave]    | 恒定最低频率 | 降低性能上限 | 是     | 是     |
-| [Ondemand]     | 按需积极调频 | 不影响       | 是     | 是     |
-| [Conservative] | 按需保守调频 | 降低响应效率 | 是     | 是     |
-| [Readyboost]   | 按需基准增频 | 不影响       | 是     | 否     |
+| 调频器            | 功能说明           | 性能影响         | 低载功耗 | AC有效 | DC有效 |
+| :---------------- | :----------------- | :--------------- | :------- | :----- | :----- |
+| [Performance]     | 恒定最高频率       | 不影响           | 明显提高 | 是     | 否     |
+| [Powersave]       | 恒定最低频率       | 降低性能上限     | 最低     | 是     | 是     |
+| [Ondemand]        | 按需积极调频       | 不影响           | 忽高忽低 | 是     | 是     |
+| [Conservative]    | 按需保守调频       | 降低响应效率     | 很低     | 是     | 是     |
+| [Readyboost]      | 恒定基频按需增频   | 不影响           | 有些提高 | 是     | 否     |
+| [Readyboost-Half] | 恒定半基频按需增频 | 略微降低响应效率 | 略微提高 | 是     | 是     |
 
 > [!IMPORTANT]  
 > 需要管理员权限运行  
