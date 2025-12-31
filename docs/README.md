@@ -7,7 +7,7 @@
 [Powersave]: ../bin/set-cpufreq-powersave.bat
 [Ondemand]: ../bin/set-cpufreq-ondemand.bat
 [Conservative]: ../bin/set-cpufreq-conservative.bat
-[ReadyBoost]: ../bin/set-cpufreq-readyboost.bat
+[Readyboost]: ../bin/set-cpufreq-readyboost.bat
 
 | 调频目标       | 用途场景     | 性能影响     | AC有效 | DC有效 |
 | :------------- | :----------- | :----------- | :----- | :----- |
@@ -15,7 +15,7 @@
 | [Powersave]    | 恒定最低频率 | 降低性能上限 | 是     | 是     |
 | [Ondemand]     | 按需积极调频 | 不影响       | 是     | 是     |
 | [Conservative] | 按需保守调频 | 降低响应效率 | 是     | 是     |
-| [ReadyBoost]   | 按需基准增频 | 不影响       | 是     | 是     |
+| [Readyboost]   | 按需基准增频 | 不影响       | 是     | 否     |
 
 > [!IMPORTANT]  
 > 需要管理员权限运行  

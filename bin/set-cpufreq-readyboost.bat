@@ -1,4 +1,4 @@
-for %%i in (SetAcValueIndex SetDcValueIndex) do (
+for %%i in (SetAcValueIndex) do (
     powercfg -%%i Scheme_Current Sub_Processor PerfAutonomous 0
     powercfg -%%i Scheme_Current Sub_Processor PerfCheck 10
 
