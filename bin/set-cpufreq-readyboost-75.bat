@@ -1,10 +1,10 @@
-for %%i in (SetAcValueIndex) do (
+for %%i in (SetAcValueIndex SetDcValueIndex) do (
     powercfg -%%i Scheme_Current Sub_Processor PerfAutonomous 0
     powercfg -%%i Scheme_Current Sub_Processor PerfCheck 10
 
-    powercfg -%%i Scheme_Current Sub_Processor ProcThrottleMin 99
-    powercfg -%%i Scheme_Current Sub_Processor ProcThrottleMin1 99
-    powercfg -%%i Scheme_Current Sub_Processor ProcThrottleMin2 99
+    powercfg -%%i Scheme_Current Sub_Processor ProcThrottleMin 75
+    powercfg -%%i Scheme_Current Sub_Processor ProcThrottleMin1 75
+    powercfg -%%i Scheme_Current Sub_Processor ProcThrottleMin2 75
     powercfg -%%i Scheme_Current Sub_Processor ProcThrottleMax 100
     powercfg -%%i Scheme_Current Sub_Processor ProcThrottleMax1 100
     powercfg -%%i Scheme_Current Sub_Processor ProcThrottleMax2 100
